@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- A-Frameと背景モジュールのCDN -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    
+  </head>
+  <body>
+    <!--シーン（VR空間）生成 -->
+    <a-scene>
+      <!-- 3Dモデル（gltfファイル） -->
+      <a-assets>
+        <a-asset-items id="ASM_ASM" src="./data/ASM_ASM.gltf" ></a-asset-items>
+        <a-asset-items id="BASE_ASM" src="./data/BASE_ASM.gltf" ></a-asset-items>
+        <a-asset-items id="BASE_ASM" src="./data/BASE_ASM.gltf" ></a-asset-items>
+        <a-asset-items id="J1_ASM" src="./data/J1_ASM.gltf" ></a-asset-items>
+        <a-asset-items id="J2_ASM" src="./data/J2_ASM.gltf" ></a-asset-items>
+        <a-asset-items id="J3_ASM" src="./data/J3_ASM.gltf" ></a-asset-items>
+      </a-assets>
+      <!-- <a-entity gltf-model="#ASM_ASM" scale="0.01 0.01 0.01" position="3 0 0" rotation="-90 0 0" animation="property: rotation; to: -90 360 0; loop: true"></a-entity> -->
+      <a-entity gltf-model="#ASM_ASM" scale="0.01 0.01 0.01" position="3 0 0" rotation="-90 0 0"></a-entity>
+      <a-entity gltf-model="#BASE_ASM" scale="0.01 0.01 0.01" position="-3 0 0" rotation="-90 0 0"></a-entity>
+      <a-entity gltf-model="#J1_ASM" scale="0.01 0.01 0.01" position="-3 0 0" rotation="-90 0 0" animation="property: rotation; to: -90 -360 0; loop: true"></a-entity>
+      <a-entity gltf-model="#J2_ASM" scale="0.01 0.01 0.01" position="-3 0 0" rotation="-90 0 0" animation="property: rotation; to: -90 360 0; loop: true"></a-entity>
+      <a-entity gltf-model="#J3_ASM" scale="0.01 0.01 0.01" position="-3 0 0" rotation="-90 0 0" animation="property: rotation; to: -90 -360 0; loop: true"></a-entity>
+      <!-- カーソル認識 -->
+      <a-entity id="rig" position="0 1 5">
+        <a-camera id="camera" cursor="rayOrigin: mouse;"></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
