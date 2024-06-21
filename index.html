@@ -29,6 +29,15 @@
         <a-asset-items id="J4_ASM" src="./data/NOVA2_J4_ASM.gltf" ></a-asset-items>
         <a-asset-items id="J5_ASM" src="./data/NOVA2_J5_ASM.gltf" ></a-asset-items>
         <a-asset-items id="J6_ASM" src="./data/NOVA2_J6_ASM.gltf" ></a-asset-items>
+
+        <!-- JAKA Zu 5 -->
+        <a-asset-items id="JAKA_BASE" src="./data/JAKA_Zu_5_BASE.gltf" ></a-asset-items>
+        <a-asset-items id="JAKA_J1" src="./data/JAKA_Zu_5_J1.gltf" ></a-asset-items>
+        <a-asset-items id="JAKA_J2" src="./data/JAKA_Zu_5_J2.gltf" ></a-asset-items>
+        <a-asset-items id="JAKA_J3" src="./data/JAKA_Zu_5_J3.gltf" ></a-asset-items>
+        <a-asset-items id="JAKA_J4" src="./data/JAKA_Zu_5_J4.gltf" ></a-asset-items>
+        <a-asset-items id="JAKA_J5" src="./data/JAKA_Zu_5_J5.gltf" ></a-asset-items>
+        <a-asset-items id="JAKA_J6" src="./data/JAKA_Zu_5_J6.gltf" ></a-asset-items>
       </a-assets>
 
       <!-- DOBOT Nova 2 -->
@@ -50,6 +59,22 @@
           <a-entity gltf-model="#j5" position="0 0.03 0.09" rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true">
           <a-entity gltf-model="#j6" position="0 0.12 0.17" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true"></a-entity>
           </a-entity></a-entity></a-entity></a-entity></a-entity></a-entity>
+
+      <!-- JAKA Zu 5 -->
+      <a-entity gltf-model="#JAKA_BASE" position="-2 0 0" rotation="0 0 0">
+        <a-entity gltf-model="#JAKA_J1" position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true">
+          <a-entity gltf-model="#JAKA_J2" position="0 0.12 0" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true">
+            <a-entity gltf-model="#JAKA_J3" position="0.43 0 0" rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true">
+              <a-entity gltf-model="#JAKA_J4" position="0.3685 0 0" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true">
+                <a-entity gltf-model="#JAKA_J5" position="0 -0.068 -0.114" rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true">
+                  <a-entity gltf-model="#JAKA_J6" position="0 -0.0455 0.068" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true"></a-entity>
+                </a-entity>
+              </a-entity>
+            </a-entity>
+          </a-entity>
+        </a-entity>
+      </a-entity>
+    
       <!-- カーソル認識 -->
       <a-entity id="rig" position="0 1 5">
         <a-camera id="camera" cursor="rayOrigin: mouse;"></a-camera>
