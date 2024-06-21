@@ -12,6 +12,7 @@
       <a-plane position="0 0 0" rotation="-90 0 0" width="40" height="40" color="#7BC8A4" shadow></a-plane>
       <!-- 3Dモデル（gltfファイル） -->
       <a-assets>
+        <!-- Cobotta PRO 900 -->
         <a-asset-items id="base_link" src="./data/base_link.gltf" ></a-asset-items>
         <a-asset-items id="j1" src="./data/j1.gltf" ></a-asset-items>
         <a-asset-items id="j2" src="./data/j2.gltf" ></a-asset-items>
@@ -20,6 +21,7 @@
         <a-asset-items id="j5" src="./data/j5.gltf" ></a-asset-items>
         <a-asset-items id="j6" src="./data/j6.gltf" ></a-asset-items>
 
+        <!-- DOBOT Nova 2 -->
         <a-asset-items id="BASE_ASM" src="./data/NOVA2_BASE_ASM.gltf" ></a-asset-items>
         <a-asset-items id="J1_ASM" src="./data/NOVA2_J1_ASM.gltf" ></a-asset-items>
         <a-asset-items id="J2_ASM" src="./data/NOVA2_J2_ASM.gltf" ></a-asset-items>
@@ -29,6 +31,7 @@
         <a-asset-items id="J6_ASM" src="./data/NOVA2_J6_ASM.gltf" ></a-asset-items>
       </a-assets>
 
+      <!-- DOBOT Nova 2 -->
       <a-entity gltf-model="#BASE_ASM" position="0 0 0" rotation="0 0 0">
         <a-entity gltf-model="#J1_ASM" position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true">
         <a-entity gltf-model="#J2_ASM" position="0 0.218 0" rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true">
@@ -37,7 +40,8 @@
         <a-entity gltf-model="#J5_ASM" position="0 0.064 -0.1155" rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true">
         <a-entity gltf-model="#J6_ASM" position="0 0.056 -0.052" rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true">
       </a-entity></a-entity></a-entity></a-entity></a-entity></a-entity></a-entity>
-  
+
+      <!-- Cobotta PRO 900 -->
       <a-entity gltf-model="#base_link" position="2 0 0" rotation="-90 0 0">
         <a-entity gltf-model="#j1" position="0 0 0.1" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true">
           <a-entity gltf-model="#j2" position="0 0 0.11" rotation="0 0 0" animation="property: rotation; to: 0 -360 0; loop: true">
